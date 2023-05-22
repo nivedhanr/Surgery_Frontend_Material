@@ -1,0 +1,13 @@
+.spaced-button{
+    margin-right: 30px;
+    background-color: rgb(245, 201, 83);
+}
+
+.body{
+    text-align: center;
+    background-color: rgb(167, 162, 162);
+    
+    border: 20px;
+    /* height: 30px;
+    width: 390px; */
+}

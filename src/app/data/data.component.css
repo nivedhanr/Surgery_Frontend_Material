@@ -1,0 +1,19 @@
+table, td, th {
+    border: 1px solid black;
+  }
+  
+  .table {
+    border-collapse: collapse;
+    width: 90%;
+    
+  }
+  .td {
+    text-align: center;
+  }
+  .heading {
+    background-color: #0c0c0c36;
+  }
+  .container{
+    margin-left: 25%;
+    margin-top: 10%;
+  }

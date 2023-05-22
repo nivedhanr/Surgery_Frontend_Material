@@ -1,0 +1,27 @@
+
+<div class="body">
+<h2><p>Reason for deletion </p></h2>
+
+
+<label for="" class="form-label">Reason:</label>
+<!-- <mat-form-field class="mat-50">
+
+     <mat-label>Surgery Type</mat-label>
+    
+     
+    
+     <mat-select formControlName="surgeryType">
+    
+    <mat-option *ngFor="let i of selectedTypes" [value]="i">{{ i }}</mat-option>
+    
+    </mat-select>
+    
+    </mat-form-field> -->
+
+<textarea  name="note" [(ngModel)]="note" id="text"  rows="5" class="form-control"></textarea>
+<br>
+<div>
+<button class="spaced-button" mat-button mat-dialog-close>Cancel</button>
+<button (click)="updateNote(id,note)" class="spaced-button" >Delete</button>
+</div>
+</div>
