@@ -5,7 +5,7 @@ table, td, th {
   .table {
     border-collapse: collapse;
     width: 90%;
-    
+   
   }
   .td {
     text-align: center;
@@ -16,6 +16,7 @@ table, td, th {
   .container{
     margin-left: 25%;
     margin-top: 10%;
+    
   }
   tr.disabled{
     opacity: 0.5;
