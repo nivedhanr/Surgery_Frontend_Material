@@ -35,6 +35,8 @@ export class Popup2Component {
 updateNote=(id:any)=>{
   console.log(id);
   
+  
+
   let data1:any={
     "note":this.note1
   }

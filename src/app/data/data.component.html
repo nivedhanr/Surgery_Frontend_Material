@@ -18,8 +18,8 @@
           </tr>
         </thead>
         <tbody>
-          
-          <tr class="td" *ngFor="let i of data" >
+          <!-- <ng-container *ngFor="let i of data "> -->
+          <tr class="td"  *ngFor="let i of data " >
 
             <td>{{i.surgery}}</td>
             <td>{{i.patient}}</td>
@@ -31,10 +31,9 @@
 
             <td>
               <button class="btn btn-info" style="margin-left: 10px">Update</button>
-            </td>
-            <td>
+            
               <!-- <button  class="btn btn-info" style="margin-left: 10px">Delete</button> -->
-              <button type="button" (click)="openDialog(i)" class="btn btn-primary" data-toggle="modal"
+              <button type="button" (click)="openDialog(i)"  class="btn btn-primary" data-toggle="modal"
                 data-target="#exampleModalCenter">
                 Delete
               </button>
@@ -65,7 +64,7 @@
 
 
           </tr>
-
+        <!-- </ng-container> -->
          
         </tbody>
       </table>

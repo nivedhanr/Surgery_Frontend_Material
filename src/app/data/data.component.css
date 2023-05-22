@@ -17,3 +17,8 @@ table, td, th {
     margin-left: 25%;
     margin-top: 10%;
   }
+  tr.disabled{
+    opacity: 0.5;
+    pointer-events: none;
+    background-color: grey;
+  }
