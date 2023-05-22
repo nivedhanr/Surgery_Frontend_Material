@@ -26,6 +26,10 @@ const myRoute:Routes=[
   {
     path:"popup1",
     component:PopupcomponentComponent
+  },
+  {
+    path:"topnav",
+    component:TopnavbarComponent
   }
 
 

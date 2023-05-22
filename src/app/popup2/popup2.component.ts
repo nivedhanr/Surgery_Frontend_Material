@@ -2,7 +2,8 @@ import { Component, Inject } from '@angular/core';
 import { MAT_DIALOG_DATA,MatDialog,MatDialogRef } from '@angular/material/dialog';
 import { ApiService } from '../api.service';
 import { HttpClient , HttpHeaders} from '@angular/common/http';
-
+import { Router } from '@angular/router';
+import { Location } from '@angular/common';
 @Component({
   selector: 'app-popup2',
   templateUrl: './popup2.component.html',
@@ -15,8 +16,8 @@ export class Popup2Component {
   note1=""
   id: any;
  
-  constructor(private api:ApiService,private dialog: MatDialog,@Inject(MAT_DIALOG_DATA) public data:any, private http:HttpClient){
-
+  constructor(private api:ApiService,private dialog: MatDialog,@Inject(MAT_DIALOG_DATA) public data:any, private http:HttpClient,private router:Router,public dialogRef: MatDialogRef<Popup2Component>,private location:Location){
+    
     this.id=data;
     console.log(this.id);
     console.log(this.id.user.i.id);
@@ -43,17 +44,23 @@ updateNote=(id:any)=>{
   this.api.deleteSurgery(id,data1).subscribe(
     (response:any)=>{
       
-    console.log(response)
-    
+    console.log(response);
+    window.location.reload();
   }
   )
+ 
 }
 
+}
+
+
     
 
 
 
     
+
+
   //     delete(surgeryList:any)
   //     {
   // this.note=surgeryList.note;
@@ -79,7 +86,7 @@ updateNote=(id:any)=>{
       //     }
       // )
     
-  }
+  
 
 
 

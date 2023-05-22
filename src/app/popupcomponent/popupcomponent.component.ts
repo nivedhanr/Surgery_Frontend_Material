@@ -30,6 +30,7 @@ ngOnInit(){
       data:{
         user
       }
+      
     });
 
     dialogRef.afterClosed().subscribe(result => {
