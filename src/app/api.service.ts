@@ -16,7 +16,7 @@ export class ApiService {
   }
 
   deleteSurgery=(id:any,surgeryList:any)=>{
-    return this.http.put(`http://localhost:8080/Surgery/delete`,surgeryList,id);
+    return this.http.put(`http://localhost:8080/Surgery/delete/${id}`,surgeryList);
   }
   // updatedData(data:any): Observable<any>{
   //   const headers=new HttpHeaders({

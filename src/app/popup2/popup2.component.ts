@@ -12,40 +12,43 @@ import { HttpClient , HttpHeaders} from '@angular/common/http';
 export class Popup2Component {
 
 
-  id:any;
-  note: any;
- 
+  note1=""
+  id: any;
  
   constructor(private api:ApiService,private dialog: MatDialog,@Inject(MAT_DIALOG_DATA) public data:any, private http:HttpClient){
 
     this.id=data;
+    console.log(this.id);
     console.log(this.id.user.i.id);
+    
     
       
     }
     ngOnInit(){
       // this.data=data.user
-        console.log(this.id);
+        // console.log(this.id);
         
       
       }
 
 
-updateNote=(id:any,note:any)=>{
-  this.api.deleteSurgery(this.id,this.note).subscribe(
+updateNote=(id:any)=>{
+  console.log(id);
+  
+  let data1:any={
+    "note":this.note1
+  }
+  this.api.deleteSurgery(id,data1).subscribe(
     (response:any)=>{
-
+      
     console.log(response)
-    if(response.status=="success"){
-      alert("Successfully")
-    }else{
-            alert("Something went wrong")
-    }
+    
   }
   )
 }
 
-      
+    
+
 
 
     

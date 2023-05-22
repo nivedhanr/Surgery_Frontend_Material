@@ -1,45 +1,46 @@
+<div class="container">
+  <div class="row">
+    <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12 " class="table">
+      <table class="table">
+        <thead class="heading">
+          <tr class="td">
 
-<div class="container" >
-    <div class="row">
-        <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12 " class="table" >
-            <table class="table" >
-                <thead class="heading">
-                  <tr class="td">
-                    
-                   <!-- <th scope="col">Id</th>-->
-                   <th scope="col">Surgery</th>
-                    <th scope="col">Patient</th>
-                    <th scope="col">Doctor</th>
-                    <th scope="col">Surgery Date</th>
-                    <th scope="col">Priority</th>
-                    <th scope="col">Status</th>
-                    <th scope="col">Notes</th>
-                    <th scope="col">Action</th>
-                    
-                  </tr>
-                </thead>
-                <tbody >
-                  <tr class="td" *ngFor="let i of data">
-                    
-                    <td>{{i.surgery}}</td>
-                    <td>{{i.patient}}</td>
-                    <td>{{i.doctor}}</td>
-                    <td>{{i.surgery_date}}</td>
-                    <td>{{i.priority}}</td>
-                    <td>{{i.status}}</td>
-                    <td>{{i.note}}</td>
-                    
-                    <td>
-                    <button class="btn btn-info" style="margin-left: 10px">Update</button>
-                    </td>
-                    <td>
-                    <!-- <button  class="btn btn-info" style="margin-left: 10px">Delete</button> -->
-                    <button type="button" (click)="openDialog(i)"  class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
-                      Delete
-                    </button>
-                    </td>
-                    
-                    <!-- <div class="modal" tabindex="-1" role="dialog">
+            <!-- <th scope="col">Id</th>-->
+            <th scope="col">Surgery</th>
+            <th scope="col">Patient</th>
+            <th scope="col">Doctor</th>
+            <th scope="col">Surgery Date</th>
+            <th scope="col">Priority</th>
+            <th scope="col">Status</th>
+            <th scope="col">Notes</th>
+            <th scope="col">Action</th>
+
+          </tr>
+        </thead>
+        <tbody>
+          
+          <tr class="td" *ngFor="let i of data" >
+
+            <td>{{i.surgery}}</td>
+            <td>{{i.patient}}</td>
+            <td>{{i.doctor}}</td>
+            <td>{{i.surgery_date}}</td>
+            <td>{{i.priority}}</td>
+            <td>{{i.status}}</td>
+            <td>{{i.note}}</td>
+
+            <td>
+              <button class="btn btn-info" style="margin-left: 10px">Update</button>
+            </td>
+            <td>
+              <!-- <button  class="btn btn-info" style="margin-left: 10px">Delete</button> -->
+              <button type="button" (click)="openDialog(i)" class="btn btn-primary" data-toggle="modal"
+                data-target="#exampleModalCenter">
+                Delete
+              </button>
+            </td>
+
+            <!-- <div class="modal" tabindex="-1" role="dialog">
                       <div class="modal-dialog" role="document">
                         <div class="modal-content">
                           <div class="modal-header">
@@ -59,13 +60,15 @@
                       </div>
                     </div>-->
 
-                    
-                    
-                   
-                    
-                  </tr>
-                </tbody>
-            </table>
-        </div>
+
+
+
+
+          </tr>
+
+         
+        </tbody>
+      </table>
     </div>
-</div> 
+  </div>
+</div>
