@@ -6,9 +6,9 @@
 .body{
     text-align: center;
     background-color: rgb(167, 162, 162);
-    height: 254px;
-    width: auto;
-    min-width: 15rem;
+    /* height: 254px;
+    width: auto; */
+   
     border: 20px;
    
     /* height: 30px;
@@ -16,9 +16,11 @@
 }
 #container{
     
-   
-    position: relative;
-    width: 390px;
-    height: 150px;
+   border: 1px solid #ccc;
+    position: absolute;
+    
+    
+    
+
 
 }

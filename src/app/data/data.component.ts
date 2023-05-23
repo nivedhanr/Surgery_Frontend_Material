@@ -33,8 +33,8 @@ export class DataComponent {
     
     
     const dialogRef = this.dialog.open(PopupcomponentComponent, {
-      width: "390px",
-      height: "254px",
+      width: "370px",
+      height: "369px",
       panelClass: 'confirm-dialog-container',
       disableClose: true,
      data: {

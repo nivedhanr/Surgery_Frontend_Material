@@ -26,12 +26,13 @@ export class PopupcomponentComponent {
 
 
   updateNote = () => {
+    
     let data1: any = {
       "note": this.note1
     }
     this.api.deleteSurgery(this.id, data1).subscribe(
       (response: any) => {
-
+        
         console.log(response);
       }
     )
