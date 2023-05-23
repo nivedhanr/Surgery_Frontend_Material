@@ -1,0 +1,77 @@
+.form-heading {
+
+     display: flex;
+    
+     flex-direction: row;
+    
+     flex-wrap: wrap;
+    
+     justify-content: space-between;
+    
+     align-items: center;
+    
+    border-bottom: 1px solid black;
+    
+    height: 80px;
+    
+     margin: 0 85px;
+    
+    
+    
+    
+    }
+    
+    
+    
+    
+    .flex-button button {
+    
+     color: #ffffff;
+    
+     padding: 5px 25px;
+    
+     border-radius: 3px;
+    
+     background-color:orange;
+    
+     border: 1px solid black;
+    
+     font-size: smaller;
+    
+    }
+    
+    
+    
+    
+    .flex-heading h2 {
+    
+     margin: 0;
+    
+    }
+    
+    
+    
+    
+    @media (max-width: 800px) {
+    
+    .flex-heading {
+     flex: 100%;
+    
+     display: flex;
+    
+     align-items: center;
+    
+     justify-content: center;
+    
+     }
+    
+    
+    
+    
+     .flex-button {
+    
+     display: none;
+    
+    }
+    
+    }

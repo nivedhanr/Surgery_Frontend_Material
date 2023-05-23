@@ -1,11 +1,13 @@
+<div id="container">
 <div class="body">
     <div>
                <br><br><br><br>
-            <h2><p>Are you sure you want to delete  surgery? </p></h2>
+            <h2><p>Are you sure you want to delete {{ user.i.surgery }} surgery? </p></h2>
 </div>
-<div><br><br><br><br>
-<button class="spaced-button" mat-button mat-dialog-close>Cancel</button>
-<button class="spaced-button" mat-dialog-close (click)="openPopUp2(user)">Delete</button>
+<div><br><br>
+<button class="spaced-button" mat-button mat-dialog-close>No</button>
+<button class="spaced-button" mat-dialog-close (click)="openPopUp2(user)">Yes</button>
 <br><br>
+</div>
 </div>
 </div>

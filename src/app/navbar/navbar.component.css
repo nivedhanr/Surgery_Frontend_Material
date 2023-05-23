@@ -172,3 +172,9 @@ border: 3px solid #0d0a0a;
   border: #0d0a0a;
   border: 7px;
  }
+
+ .width{
+  width: 80px;
+display: flexbox;
+justify-content: left;
+ }

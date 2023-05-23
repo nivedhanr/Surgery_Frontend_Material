@@ -9,8 +9,9 @@ import { MAT_DIALOG_DATA,MatDialogRef } from '@angular/material/dialog';
 })
 export class PopupcomponentComponent {
   user:any;
+ 
   
-constructor(private dialog: MatDialog,@Inject(MAT_DIALOG_DATA) public data:any){
+constructor(private dialog: MatDialog,@Inject(MAT_DIALOG_DATA) public data:any,public dialogRef:MatDialogRef<PopupcomponentComponent>){
 this.user=data;
   
 }
@@ -20,6 +21,7 @@ ngOnInit(){
   
 }
   openPopUp2(user:any): void {
+    
     console.log(user.i.id);
     
     const dialogRef = this.dialog.open(Popup2Component, {

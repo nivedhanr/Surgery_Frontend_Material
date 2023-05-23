@@ -13,6 +13,7 @@ import { HttpClientModule} from '@angular/common/http';
 import {MatDialogModule} from '@angular/material/dialog';
 import { PopupcomponentComponent } from './popupcomponent/popupcomponent.component';
 import { Popup2Component } from './popup2/popup2.component';
+import { CreateComponent } from './create/create.component';
 
 const myRoute:Routes=[
   {
@@ -42,7 +43,8 @@ const myRoute:Routes=[
     TopnavbarComponent,
     DataComponent,
     PopupcomponentComponent,
-    Popup2Component
+    Popup2Component,
+    CreateComponent
   ],
   imports: [
     BrowserModule,
