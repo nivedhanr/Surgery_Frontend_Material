@@ -1,13 +1,18 @@
 <div id="container">
-<div class="body">
-    <div>
-               <br><br><br><br>
-            <h2><p>Are you sure you want to delete {{ user.i.surgery }} surgery? </p></h2>
-</div>
-<div><br><br>
-<button class="spaced-button" mat-button mat-dialog-close>No</button>
-<button class="spaced-button" mat-dialog-close (click)="openPopUp2(user)">Yes</button>
-<br><br>
-</div>
-</div>
+    <div class="body">
+        <div style="width:100%">
+            <h2>Are you sure you want to delete {{id.surgery}}  surgery?</h2>
+            <br><br><br><br>
+            <h2>
+                <p>Reason for deletion </p>
+            </h2>
+            <label for="" class="form-label">Reason:</label>
+            <textarea name="note1" [(ngModel)]="note1" id="text" rows="5" class="form-control"></textarea>
+        </div>
+        <div><br><br>
+            <button class="spaced-button" mat-button mat-dialog-close>No</button>
+            <button class="spaced-button" mat-dialog-close (click)="updateNote()">Yes</button>
+            <br><br>
+        </div>
+    </div>
 </div>

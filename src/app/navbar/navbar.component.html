@@ -49,12 +49,15 @@
         <br><br>
         <div id="sur" class="mr-0">
         
-        <a (click)="table()" routerLink="/">Surgery</a>
+        <a (click)="table()" routerLink="/surgery">Surgery</a>
         
     </div>
         </div>
         <!-- <app-create class="width"></app-create> -->
-    <app-data *ngIf="showTable"></app-data>
+        <router-outlet>
+            <app-data *ngIf="showTable"></app-data>
+        </router-outlet>
+    
     
     
         

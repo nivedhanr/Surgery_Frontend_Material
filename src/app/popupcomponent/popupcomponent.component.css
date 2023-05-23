@@ -7,6 +7,8 @@
     text-align: center;
     background-color: rgb(167, 162, 162);
     height: 254px;
+    width: auto;
+    min-width: 15rem;
     border: 20px;
    
     /* height: 30px;

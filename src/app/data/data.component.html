@@ -21,21 +21,21 @@
         <tbody>
           
           <tr class="td"  *ngFor="let i of data " >
-
-            <td>{{i.surgery}}</td>
-            <td>{{i.patient}}</td>
-            <td>{{i.doctor}}</td>
-            <td>{{i.surgery_date}}</td>
-            <td>{{i.priority}}</td>
-            <td>{{i.status}}</td>
-            <td>{{i.note}}</td>
+              
+            <td [ngClass]="{'greyedOut': i.status1==1,'notgreyed': i.status1==0}">{{i.surgery}}</td>
+            <td [ngClass]="{'greyedOut': i.status1==1,'notgreyed': i.status1==0}">{{i.patient}}</td>
+            <td [ngClass]="{'greyedOut': i.status1==1,'notgreyed': i.status1==0}">{{i.doctor}}</td>
+            <td [ngClass]="{'greyedOut': i.status1==1,'notgreyed': i.status1==0}">{{i.surgery_date}}</td>
+            <td [ngClass]="{'greyedOut': i.status1==1,'notgreyed': i.status1==0}">{{i.priority}}</td>
+            <td [ngClass]="{'greyedOut': i.status1==1,'notgreyed': i.status1==0}">{{i.status}}</td>
+            <td [ngClass]="{'greyedOut': i.status1==1,'notgreyed': i.status1==0}">{{i.note}}</td>
 
             <td>
-              <button class="btn btn-info" style="margin-left: 10px">Update</button>
+              <button class="btn btn-info" style="margin-left: 10px" [disabled]="i.status1==1">Update</button>
             
               
               <button type="button" (click)="openDialog(i)"  class="btn btn-primary" data-toggle="modal"
-                data-target="#exampleModalCenter">
+                data-target="#exampleModalCenter" [disabled]="i.status1==1">
                 Delete
               </button>
             </td>

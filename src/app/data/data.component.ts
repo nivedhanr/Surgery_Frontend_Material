@@ -14,6 +14,10 @@ export class DataComponent {
   constructor(private api:ApiService, private router:Router, private dialog: MatDialog){
     
     // ngOnInit(): void{
+    this.viewSurgery();
+  }
+
+  viewSurgery = ()=>{
     this.api.viewSurgery().subscribe(
       (response:any)=>{
        
@@ -34,13 +38,16 @@ export class DataComponent {
       panelClass: 'confirm-dialog-container',
       disableClose: true,
      data: {
-      i
+      "id":i.id
      }
     });
 
     dialogRef.afterClosed().subscribe(result => {
-      console.log('The dialog was closed');
+      console.log(result);
       
+      this.viewSurgery();
+      console.log('The dialog was closed');
+
     });
     
   }

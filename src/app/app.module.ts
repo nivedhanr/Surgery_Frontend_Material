@@ -12,28 +12,18 @@ import { FormsModule } from '@angular/forms';
 import { HttpClientModule} from '@angular/common/http';
 import {MatDialogModule} from '@angular/material/dialog';
 import { PopupcomponentComponent } from './popupcomponent/popupcomponent.component';
-import { Popup2Component } from './popup2/popup2.component';
 import { CreateComponent } from './create/create.component';
 
 const myRoute:Routes=[
   {
-    path:"data",
+    path:"",
+    redirectTo:'surgery',
+    pathMatch:'full'
+  },
+  {
+    path:"surgery",
     component:DataComponent
   },
-  {
-    path:"navbar",
-    component:NavbarComponent
-  },
-  {
-    path:"popup1",
-    component:PopupcomponentComponent
-  },
-  {
-    path:"topnav",
-    component:TopnavbarComponent
-  }
-
-
 ]
 
 @NgModule({
@@ -43,7 +33,6 @@ const myRoute:Routes=[
     TopnavbarComponent,
     DataComponent,
     PopupcomponentComponent,
-    Popup2Component,
     CreateComponent
   ],
   imports: [

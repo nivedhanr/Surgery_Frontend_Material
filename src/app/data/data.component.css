@@ -23,3 +23,11 @@ table, td, th {
     pointer-events: none;
     background-color: grey;
   }
+
+  .greyedOut {
+    color: rgb(183, 183, 183);
+  }
+
+  .notGreyed {
+    color: black;
+  }
