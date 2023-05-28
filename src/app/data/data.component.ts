@@ -21,7 +21,7 @@ export class DataComponent {
     this.api.viewSurgery().subscribe(
       (response:any)=>{
        
-        this.data=response.surgeryList;//dto
+        this.data=response.surgeryList;
         console.log(this.data)
       }
     )

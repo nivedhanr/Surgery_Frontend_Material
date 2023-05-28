@@ -12,7 +12,7 @@ import { FormsModule } from '@angular/forms';
 import { HttpClientModule} from '@angular/common/http';
 import {MatDialogModule} from '@angular/material/dialog';
 import { PopupcomponentComponent } from './popupcomponent/popupcomponent.component';
-import { CreateComponent } from './create/create.component';
+
 
 const myRoute:Routes=[
   {
@@ -27,8 +27,8 @@ const myRoute:Routes=[
     NavbarComponent,
     TopnavbarComponent,
     DataComponent,
-    PopupcomponentComponent,
-    CreateComponent
+    PopupcomponentComponent
+    
   ],
   imports: [
     BrowserModule,
