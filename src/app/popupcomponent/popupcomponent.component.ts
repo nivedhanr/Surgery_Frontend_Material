@@ -11,12 +11,18 @@ export class PopupcomponentComponent {
   user: any;
   note1 = ""
   id: any;
+  surgery = ""
 
 
   constructor(private api: ApiService, private dialog: MatDialog, @Inject(MAT_DIALOG_DATA) public data: any, public dialogRef: MatDialogRef<PopupcomponentComponent>) {
     this.user = data;
-    console.log(data)
+    console.log("data");
+    
+    console.log(this.user)
+    console.log("data");
+    
     this.id = data.id;
+    this.surgery = data.surgery;
   }
   ngOnInit() {
     // this.data=data.user
@@ -26,16 +32,18 @@ export class PopupcomponentComponent {
 
 
   updateNote = () => {
-    
-    let data1: any = {
-      "note": this.note1
-    }
-    this.api.deleteSurgery(this.id, data1).subscribe(
-      (response: any) => {
-        
-        console.log(response);
+    if (this.note1 != "") {
+      let data1: any = {
+        "note": this.note1
       }
-    )
+      this.api.deleteSurgery(this.id, data1).subscribe(
+        (response: any) => {
+
+          console.log(response);
+        }
+      )
+    }
+
 
   }
 }

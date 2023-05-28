@@ -38,7 +38,8 @@ export class DataComponent {
       panelClass: 'confirm-dialog-container',
       disableClose: true,
      data: {
-      "id":i.id
+      "id":i.id,
+      "surgery":i.surgery
      }
     });
 

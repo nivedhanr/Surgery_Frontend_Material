@@ -16,11 +16,6 @@ import { CreateComponent } from './create/create.component';
 
 const myRoute:Routes=[
   {
-    path:"",
-    redirectTo:'surgery',
-    pathMatch:'full'
-  },
-  {
     path:"surgery",
     component:DataComponent
   },
