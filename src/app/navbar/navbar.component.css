@@ -1,0 +1,180 @@
+/* .container-fluid
+
+{
+
+ overflow: hidden;
+/* border: 100px solid #000; */
+ /* position: fixed; */
+ /* border-color: #0d0a0a;
+ width: 100%;
+ height: 60px;
+ top:2px;
+ background-color: #e2e5e1f7; */
+
+/* } */
+.navbar-brand 
+{
+
+  color: rgb(239, 130, 13);
+
+}
+
+/* The side navigation menu */
+
+.sidebar {
+
+  margin: 0;
+/* border: 10px solid;
+border-width: 2px; */
+border: 3px solid #0d0a0a;
+  top:71px;
+
+  padding: 0;
+
+  width: 300px;
+
+  background-color: #e9e9e5;
+
+  position: fixed;
+
+  height: 100%;
+
+  overflow: auto;
+
+ }
+#sur {
+    background-color: #f18306dd;
+    text-align: center;
+    border: 3px solid #0d0a0a;
+    border-left: 3px ;
+    border-right:3px  ;
+    width: 300px;
+    margin: 0;
+}
+
+
+ /* Sidebar links */
+
+ .sidebar a {
+
+  display: block;
+
+  color: white;
+
+  padding: 15px;
+
+  text-decoration: none;
+
+ }
+
+
+
+ /* Active/current link */
+
+ .sidebar a.active {
+
+  background-color: #04AA6D;
+
+  color: white;
+
+ }
+
+
+
+ /* Links on mouse-over */
+
+ .sidebar a:hover:not(.active) {
+
+  background-color: #393737;
+
+  color: white;
+
+ }
+
+
+
+ /* Page content. The value of the margin-left property should match the value of the sidebar's width property */
+
+ div.content {
+
+  margin-left: 200px;
+
+  padding: 1px 16px;
+
+  height: 1000px;
+
+ }
+
+
+
+ /* On screens that are less than 700px wide, make the sidebar into a topbar */
+
+ @media screen and (max-width: 700px) {
+
+  .sidebar {
+
+   width: 100px;
+
+   height: 100%;
+
+   position: relative;
+
+  }
+
+  .sidebar a {float: left;}
+
+  div.content {margin-left: 0;}
+
+ }
+
+
+
+ /* On screens that are less than 400px, display the bar vertically, instead of horizontally */
+
+ @media screen and (max-width: 400px) {
+
+  .sidebar a {
+
+   text-align: center;
+
+   float: none;
+
+  }
+
+ }
+ /* #search{
+  width: 1000px;
+   margin: 4px;
+ 
+ } */
+
+ #search-text{
+  width: 800px;
+  padding: 15px 0 15px 20px;
+  font-size: 16px;
+  border: 0 none;
+  height: 52px;
+  margin: auto;
+  color: white;
+  outline: none;
+  background: #1f7f5c;
+  float: inline-start;
+  box-sizing: border-box;
+  transition: all 0.15s;
+ }
+ 
+.drop{
+  display: flex;
+  justify-content: center;
+  margin-right: 20%;
+}
+ .drop-boader{
+  border: #0d0a0a;
+  border: 7px;
+ }
+
+ .width{
+  width: 80px;
+display: flexbox;
+justify-content: left;
+ }

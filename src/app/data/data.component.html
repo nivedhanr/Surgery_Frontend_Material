@@ -1,0 +1,56 @@
+<br><br><br><br><br><br><br><br>
+<div class="col col-12 col-sm-4 col-md-4 col-lg-6 col-xl-6 col-xxl-12" class="container " >
+  <div class="row">
+    <div class="col col-12 col-sm-4 col-md-4 col-lg-6 col-xl-6 col-xxl-12" class="table">
+      <table class="table">
+        <thead class="heading">
+          <tr class="td">
+
+            
+            <th scope="col">Surgery</th>
+            <th scope="col">Patient</th>
+            <th scope="col">Doctor</th>
+            <th scope="col">Surgery Date</th>
+            <th scope="col">Priority</th>
+            <th scope="col">Tools Required</th>
+            <th scope="col">Notes</th>
+            <th scope="col">Action</th>
+
+          </tr>
+        </thead>
+        <tbody>
+          
+          <tr class="td"  *ngFor="let i of data " >
+              
+            <td [ngClass]="{'greyedOut': i.status1==1,'notgreyed': i.status1==0}">{{i.surgery}}</td>
+            <td [ngClass]="{'greyedOut': i.status1==1,'notgreyed': i.status1==0}">{{i.patient}}</td>
+            <td [ngClass]="{'greyedOut': i.status1==1,'notgreyed': i.status1==0}">{{i.doctor}}</td>
+            <td [ngClass]="{'greyedOut': i.status1==1,'notgreyed': i.status1==0}">{{i.surgery_date}}</td>
+            <td [ngClass]="{'greyedOut': i.status1==1,'notgreyed': i.status1==0}">{{i.priority}}</td>
+            <td [ngClass]="{'greyedOut': i.status1==1,'notgreyed': i.status1==0}">{{i.tools_required}}</td>
+            <td [ngClass]="{'greyedOut': i.status1==1,'notgreyed': i.status1==0}">{{i.note}}</td>
+
+            <td>
+              <button class="btn btn-info" style="margin-left: 10px" [disabled]="i.status1==1">Update</button>
+            
+              
+              <button type="button" (click)="openDialog(i)"  class="btn btn-primary" data-toggle="modal"
+                data-target="#exampleModalCenter" [disabled]="i.status1==1">
+                Delete
+              </button>
+            </td>
+
+            
+
+
+
+
+
+          </tr>
+        
+         
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>

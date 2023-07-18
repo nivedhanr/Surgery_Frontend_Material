@@ -1,0 +1,33 @@
+table, td, th {
+    border: 1px solid black;
+  }
+  
+  .table {
+    border-collapse: collapse;
+    width: 90%;
+   
+  }
+  .td {
+    text-align: center;
+  }
+  .heading {
+    background-color: #0c0c0c36;
+  }
+  .container{
+    margin-left: 25%;
+    margin-top: 10%;
+    
+  }
+  tr.disabled{
+    opacity: 0.5;
+    pointer-events: none;
+    background-color: grey;
+  }
+
+  .greyedOut {
+    color: rgb(183, 183, 183);
+  }
+
+  .notGreyed {
+    color: black;
+  }

@@ -1,0 +1,18 @@
+<div id="container">
+    <div class="body">
+        <form method="post">
+        <div >
+            <h2>Are you sure you want to delete {{surgery}}?</h2>
+            <br><br>
+            
+            <label for="" class="form-label">Reason for deletion :</label>
+            <textarea maxlength="25" placeholder="Enter the Reason" name="note1" [(ngModel)]="note1" id="text" rows="5" class="form-control" required></textarea>
+        </div>
+        <div><br><br>
+            <button class="spaced-button" mat-button mat-dialog-close>Go Back</button>
+            <button class="spaced-button" mat-dialog-close (click)="updateNote()" >Delete</button>
+            <br><br>
+        </div>
+    </form>
+    </div>
+</div>
